@@ -1,0 +1,53 @@
+Beta,,,LVR Underground,LVR Surface,
+LVR Name,PPP Name,PPP Part No.,LV1.5 (no) (J12/J13) (ChS/ChR),LV1.2 (no) (J12/J13) (ChS/ChR),Cable Pair.Wire
+DCB_7_beta_b_P,JD7_JPL1_1V5_Master,P26 - 1,28 - J13 - 8,15 - J13 - 8 | ID: 16,W1.Blue
+DCB_7_beta_b_P_S,JD7_JPL1_1V5_Slave,P26 - 2,28 - J13 - 6,15 - J13 - 6 | ID: 16,W2.2
+DCB_6_7_beta_b_25_P,JD7_6_JPL1_2V5,P26 - 3,2.5 35 - J13 - 8,17 - J13 - 8 | ID: 11,W5.8
+DCB_8_beta_b_P,JD8_JPL2_1V5_Master,P26 - 4,30 - J13 - 4,13 - J13 - 4 | ID: 8,W3.4
+DCB_8_beta_b_P_S,JD8_JPL2_1V5_Slave,P26 - 5,30 - J13 - 2,13 - J13 - 2 | ID: 8,W4.6
+DCB_10_11_beta_b_25_P,JD11_10_JPL2_2V5,P26 - 6,2.5 35 - J12 - 6,17 - J12 - 6 | ID: 11,W6.10
+DCB_7_beta_b_N,JD7_JPL1_GND_Master,P26 - 9,28 - J13 - 7,15 - J13 - 7 | ID: 16,W1.Green
+DCB_7_beta_b_N_S,JD7_JPL1_GND_Slave,P26 - 10,28 - J13 - 5,15 - J13 - 5 | ID: 16,W2.1
+DCB_6_7_beta_b_25_N,JD7_6_JPL1_GND,P26 - 11,2.5 35 - J13 - 7,17 - J13 - 7 | ID: 11,W5.7
+DCB_8_beta_b_N,JD8_JPL2_GND_Master,P26 - 12,30 - J13 - 3,13 - J13 - 3 | ID: 8,W3.3
+DCB_8_beta_b_N_S,JD8_JPL2_GND_Slave,P26 - 13,30 - J13 - 1,13 - J13 - 1 | ID: 8,W4.5
+DCB_10_11_beta_b_25_N,JD11_10_JPL2_GND,P26 - 14,2.5 35 - J12 - 5,17 - J12 - 5 | ID: 11,W6.9
+DCB_0_beta_b_P,JD0_JPL0_1V5_Master,P27 -1,30 - J12 - 4,13 - J12 - 4 | ID: 8,W1.Blue
+DCB_1_beta_b_P_S,JD1_JPL0_1V5_Slave,P27 - 2,30 - J12 - 6,13 - J12 - 6 | ID: 8,W4.6
+DCB_1_beta_b_P,JD1_JPL0_1V5_Master,P27 - 3,30 - J12 - 8,13 - J12 - 8 | ID: 8,W3.4
+DCB_4_beta_b_P,JD4_JPL1_1V5_Master,P27 - 4,28 - J12 - 4,15 - J12 - 4 | ID: 16,W5.8
+DCB_4_beta_b_P_S,JD4_JPL1_1V5_Slave,P27 - 5,28 - J12 - 2,15 - J12 - 2 | ID: 16,W6.10
+DCB_0_beta_b_P_S,JD0_JPL0_1V5_Slave,P27 - 6,30 - J12 - 2,13 - J12 - 2 | ID: 8,W2.2
+DCB_0_beta_b_N,JD0_JPL0_GND_Master,P27 - 9,30 - J12 - 3,13 - J12 - 3 | ID: 8,W1.Green
+DCB_1_beta_b_N_S,JD1_JPL0_GND_Slave,P27 - 10,30 - J12 - 5,13 - J12 - 5 | ID: 8,W4.5
+DCB_1_beta_b_N,JD1_JPL0_GND_Master,P27 - 11,30 - J12 - 7,13 - J12 - 7 | ID: 8,W3.3
+DCB_4_beta_b_N,JD4_JPL1_GND_Master,P27 - 12,28 - J12 - 3,15 - J12 - 3 | ID: 8,W5.7
+DCB_4_beta_b_N_S,JD4_JPL1_GND_Slave,P27 - 13,28 - J12 - 1,15 - J12 - 1 | ID: 16,W6.9
+DCB_0_beta_b_N_S,JD0_JPL0_GND_Slave,P27 - 14,30 - J12 - 1,13 - J12 - 1 | ID: 8,W2.1
+DCB_6_beta_b_P_S,JD6_JPL1_1V5_Slave,P29 - 1,28 - J13 - 2,15 - J13 - 2 | ID: 16,W2.2
+DCB_6_beta_b_P,JD6_JPL1_1V5_Master,P29 - 2,28 - J13 - 4,15 - J13 - 4 | ID: 16,W1.Blue
+DCB_9_beta_b_P_S,JD9_JPL2_1V5_Slave,P29 - 3,30 - J13 - 6,13 - J13 - 6 | ID: 8,W4.6
+DCB_9_beta_b_P,JD9_JPL2_1V5_Master,P29 - 5,30 - J13 - 8,13 - J13 - 8 | ID: 8,W.3.4
+DCB_10_beta_b_P_S,JD10_JPL2_1V5_Slave,P29 - 6,32 - J12 - 2,14 - J12 - 2 | ID: 18,W6.10
+DCB_10_beta_b_P,JD10_JPL2_1V5_Master,P29 - 7,32 - J12 - 4,14 - J12 - 4 | ID: 18,W5.8
+DCB_6_beta_b_N_S,JD6_JPL1_GND_Slave,P29 - 9,28 - J13 - 1,15 - J13 - 1 | ID: 16,W2.1
+DCB_6_beta_b_N,JD6_JPL1_GND_Master,P29 - 10,28 - J13 - 3,15 - J13 - 3 | ID: 16,W1.Green
+DCB_9_beta_b_N_S,JD9_JPL2_GND_Slave,P29 - 11,30 - J13 - 5,13 - J13 - 5 | ID: 8,W4.5
+DCB_9_beta_b_N,JD9_JPL2_GND_Master,P29 - 13,30 - J13 - 7,13 - J13 - 7 | ID: 8,W3.3
+DCB_10_beta_b_N_S,JD10_JPL2_GND_Slave,P29 - 14,32 - J12 - 1,14 - J12 - 1 | ID: 18,W6.9
+DCB_10_beta_b_N,JD10_JPL2_GND_Master,P29 - 15,32 - J12 - 3,14 - J12 - 3 | ID: 18,W5.7
+DCB_0_1_beta_b_25_P,JD1_0_JPL0_2V5,P30 - 1,2.5 35 - J13 - 2,17 - J13 - 2 | ID: 11,W3.4
+DCB_5_beta_b_P_S,JD5_JPL1_1V5_Slave,P30 - 3,28 - J12 - 6,15 - J12 - 6 | ID: 16,W2.2
+DCB_4_5_beta_b_25_P,JD5_4_JPL1_2V5,P30 - 4,2.5 35 - J13 - 4,17 - J13 - 4 | ID: 11,W4.6
+DCB_5_beta_b_P,JD5_JPL1_1V5_Master,P30 - 5,28 - J12 - 8,15 - J12 - 8 | ID: 16,W1.Blue
+DCB_0_1_beta_b_25_N,JD1_0_JPL0_GND,P30 - 9,2.5 35 - J13 - 1,17 - J13 - 1 | ID: 11,W3.3
+DCB_5_beta_b_N_S,JD5_JPL1_GND_Slave,P30 - 11,28 - J12 - 5,15 - J12 - 5 | ID: 16,W2.1
+DCB_4_5_beta_b_25_N,JD5_4_JPL1_GND,P30 - 12,2.5 35 - J13 - 3,17 - J13 - 3 | ID: 11,W4.5
+DCB_5_beta_b_N,JD5_JPL1_GND_Master,P30 - 13,28 - J12 - 7,15 - J12 - 7 | ID: 16,W1.Green
+DCB_8_9_beta_b_25_P,JD9_8_JPL2_2V5,P29 - 4,2.5 35 - J13 - 6,17 - J13 - 6 | ID: 11,W3.3
+DCB_8_9_beta_b_25_N,JD9_8_JPL2_GND,P29 - 12,2.5 35 - J13 - 5,17 - J13 - 5 | ID: 11,W3.4
+DCB_11_beta_b_P_S,JD11_JPL2_1V5_Slave,P29 - 8,32 - J13 - 2,14 - J13 - 2 | ID: 18,W2.2
+DCB_11_beta_b_N_S,JD11_JPL2_GND_Slave,P29 - 16,32 - J13 - 1,14 - J13 - 1 | ID: 18,W2.1
+DCB_11_beta_b_P,JD11_JPL2_1V5_Master,P26 - 7,32 - J13 - 4,14 - J13 - 4 | ID: 18,W1.Blue
+DCB_11_beta_b_N,JD11_JPL2_GND_Master,P26 - 15,32 - J13 - 3,14 - J13 - 3 | ID: 18,W1.Green
+,,,,,

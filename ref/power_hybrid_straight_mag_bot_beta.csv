@@ -1,0 +1,24 @@
+LVR Name,PPP Name,PPP Part No - Pin No (Src/Ret).,LVR Surface,Cable Pair Wire.A / Wire.B (Src/Ret)
+Beta,,,LV1.2 (no) (J12/J13) (ChS/ChR),
+PT_b_beta_X0S_P1W_LV_SRC/RET,JP3_JPU0_P1W_LV_Source/Return,P10 - 1/9,6 - J13 - 2/1 | ID: 66,W1.BLUE / W1.GREEN
+PT_b_beta_X0S_P2E_LV_SRC/RET,JP3_JPU1_P2E_LV_Source/Return,P10 - 2/10,6 - J13 - 8/7 | ID: 66,W2.2 / W2.1
+PT_b_gamma_X0S_P3_LV_SRC/RET,JP3_JPU1_P3_LV_Source/Return,P10 - 3/11,4 - J12 - 4/3 | ID: 64,W3.4 / W3.3
+PT_b_beta_X0M_P1W_LV_SRC/RET,JP2_JPU0_P1W_LV_Source/Return,P10 - 4/12,9 - J12 - 2/1 | ID: 24,W4.6 / W4.5
+PT_b_beta_X0M_P2E_LV_SRC/RET,JP2_JPU0_P2E_LV_Source/Return,P10 - 5/13,6 - J12 - 2/1 | ID: 66,W5.8 / W5.7
+PT_b_gamma_X0M_P3_LV_SRC/RET,JP2_JPU0_P3_LV_Source/Return,P10 - 6/14,4 - J12 - 8/7 | ID: 64,W6.10 / W6.9
+PT_b_beta_X1S_P1W_LV_SRC/RET,JP7_JPU1_P1W_LV_Source/Return,P11 - 1/9,6 - J13 - 6/5 | ID: 66,W1.BLUE / W1.GREEN
+PT_b_gamma_X1S_P2E_LV_SRC/RET,JP7_JPU1_P2E_LV_Source/Return,P11 - 2/10,4 - J12 - 2/1 | ID: 64,W2.2 / W2.1
+PT_b_gamma_X1S_P3_LV_SRC/RET,JP7_JPU1_P3_LV_Source/Return,P11 - 3/11,2 - J12 - 4/3 | ID: 51,W3.4 / W3.3
+PT_b_beta_X1M_P1W_LV_SRC/RET,JP6_JPU1_P1W_LV_Source/Return,P11 - 4/12,9 - J12 - 8/7 | ID: 24,W4.6 / W4.5
+PT_b_beta_X1M_P2E_LV_SRC/RET,JP6_JPU1_P2E_LV_Source/Return,P11 - 5/13,6 - J12 - 4/3 | ID: 66,W5.8 / W5.7
+PT_b_gamma_X1M_P3_LV_SRC/RET,JP6_JPU1_P3_LV_Source/Return,P11 - 6/14,4 - J12 - 6/5 | ID: 64,W6.10 / W6.9
+PT_b_beta_X2S_P1W_LV_SRC/RET,JP11_JPU2_P1W_LV_Source/Return,P12 - 1/9,6 - J12 - 8/7 | ID: 66,W1.BLUE / W1.GREEN
+PT_b_gamma_X2S_P2E_LV_SRC/RET,JP11_JPU2_P2E_LV_Source/Return,P12 - 2/10,4 - J13 - 4/3 | ID: 64,W2.2 / W2.1
+PT_b_beta_X2M_P1W_LV_SRC/RET,JP10_JPU2_P1W_LV_Source/Return,P12 - 4/12,9 - J12 - 6/5 | ID: 24,W4.6 / W4.5
+PT_b_beta_X2M_P2E_LV_SRC/RET,JP10_JPU2_P2E_LV_Source/Return,P12 - 5/13,6 - J12 - 6/5 | ID: 66,W5.8 / W5.7
+PT_b_gamma_X2M_P3_LV_SRC/RET,JP10_JPU2_P3_LV_Source/Return,P12 - 6/14,4 - J13 - 8/7 | ID: 64,W6.10 / W6.9
+PT_b_gamma_X0M_P4_LV_SRC/RET,JP2_JPL1_P4_LV_Source/Return,P28 - 1/9,2 - J12 - 8/7 | ID: 51,W1.BLUE / W1.GREEN
+PT_b_gamma_X1M_P4_LV_SRC/RET,JP6_JPL1_P4_LV_Source/Return,P28 - 2/10,2 - J12 - 6/5 | ID: 51,W2.2 / W2.1
+PT_b_beta_X2M_P4_LV_SRC/RET,JP10_JPL2_P4_LV_Source/Return,P28 - 3/11,2 - J13 - 8/7 | ID: 51,W3.4 / W3.3
+PT_b_gamma_X2S_P3_LV_SRC/RET,JP11_JPL2_P3_LV_Source/Return,P28 - 4/12,2 - J12 - 2/1 | ID: 51,W4.6 / W4.5
+,,,,

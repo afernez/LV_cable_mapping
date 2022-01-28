@@ -1,0 +1,23 @@
+LVR Name,PPP Name,PPP Part No - Pin No (Src/Ret),LVR Underground,LVR Surface,Cable Pair Wire.A / Wire.B (Src/Ret)
+Beta,,,LV1.2 (no) (J12/J13) (ChS/ChR),LV1.2 (no) (J12/J13) (ChS/ChR) | ID: #,
+PT_b_beta_S2M_P1W_LV_SRC/RET,JP11_JPU2_P1W_LV_Source/Return,P7 - 1/9,24 - J12 - 6/5,9 - J12 - 6/5  | ID: 23,W1.BLUE / W1.GREEN
+PT_b_beta_S2M_P2E_LV_SRC/RET,JP11_JPU2_P2E_LV_Source/Return,P7 - 2/10,19 - J12 - 6/5,6 - J12 - 6/5 | ID: 25,W2.2 / W2.1
+PT_b_beta_S2S_P1W_LV_SRC/RET,JP10_JPU2_P1W_LV_Source/Return,P7 - 4/12,19 - J12 - 8/7,6 - J12 - 8/7 | ID: 25,W4.6 / W4.5
+PT_b_beta_S2S_P2E_LV_SRC/RET,JP10_JPU2_P2E_LV_Source/Return,P7 - 5/13,16 - J13 - 4/3,4 - J13 - 4/3 | ID: 36,W5.8 / W5.7
+PT_b_beta_S2S_P3_LV_SRC/RET,JP10_JPU2_P3_LV_Source/Return,P7 - 6/14,14 - J12 - 2/1,2 - J12 - 2/1 | ID: 50,W6.10 / W6.9
+PT_b_beta_S1M_P1W_LV_SRC/RET,JP7_JPU2_P1W_LV_Source/Return,P8 - 1/9,24 - J12 - 8/7,9 - J12 - 8/7 | ID: 23,W1.BLUE / W1.GREEN
+PT_b_beta_S1M_P2E_LV_SRC/RET,JP7_JPU2_P2E_LV_Source/Return,P8 - 2/10,19 - J12 - 4/3,6 - J12 - 4/3 | ID: 25,W2.2 / W2.1
+PT_b_beta_S1M_P3_LV_SRC/RET,JP7_JPU2_P3_LV_Source/Return,P8 - 3/11,16 - J12 - 6/5,4 - J12 - 6/5 | ID: 36,W3.4 / W3.3
+PT_b_beta_S1S_P1W_LV_SRC/RET,JP6_JPU1_P1W_LV_Source/Return,P8 - 4/12,19 - J13 - 6/5,6 - J13 - 6/5 | ID: 25,W4.6 / W4.5
+PT_b_beta_S1S_P2E_LV_SRC/RET,JP6_JPU1_P2E_LV_Source/Return,P8 - 5/13,16 - J12 - 2/1,4 - J12 - 2/1 | ID: 36,W5.8 / W5.7
+PT_b_beta_S1S_P3_LV_SRC/RET,JP6_JPU1_P3_LV_Source/Return,P8 - 6/14,14 - J12 - 4/3,2 - J12 - 4/3  | ID: 50,W6.10 / W6.9
+PT_b_beta_S0M_P1W_LV_SRC/RET,JP3_JPU0_P1W_LV_Source/Return,P9 - 1/9,24 - J12 - 4/3,9 - J12 - 2/1  | ID: 23,W1.BLUE / W1.GREEN
+PT_b_beta_S0M_P2E_LV_SRC/RET,JP3_JPU1_P2E_LV_Source/Retrun,P9 - 2/10,19 - J12 - 2/1,6 - J12 - 2/1 | ID: 25,W2.2 / W2.1
+PT_b_beta_S0M_P3_LV_SRC/RET,JP3_JPU1_P3_LV_Source/Return,P9 - 3/11,16 - J12 - 8/7,4 - J12 - 8/7 | ID: 36,W3.4 / W3.3
+PT_b_beta_S0S_P1W_LV_SRC/RET,JP2_JPU0_P1W_LV_Source/Return,P9 - 4/12,19 - J13 - 2/1,6 - J13 - 2/1 | ID: 25,W4.6 / W4.5
+PT_b_beta_S0S_P2E_LV_SRC/RET,JP2_JPU0_P2E_LV_Source/Return,P9 - 5/13,19 - J13 - 8/7,6 - J13 - 8/7 | ID: 25,W5.8 / W5.7
+PT_b_beta_S0S_P3_LV_SRC/RET,JP2_JPU0_P3_LV_Source/Return,P9 - 6/14,16 - J12 - 4/3,4 - J12 - 4/3 | ID: 36,W6.10 / W6.9
+PT_b_beta_S0M_P4_LV_SRC/RET,JP3_JPU1_P4_LV_Source/Return,P28 - 1/9,14 - J12 - 8/7,2 - J12 - 8/7 | ID: 50,W1.BLUE / W1.GREEN
+PT_b_beta_S1M_P4_LV_SRC/RET,JP7_JPU2_P4_LV_Source/Return,P28 - 2/10,14 - J12 - 6/5,2 - J12 - 6/5 | ID: 50,W2.2 / W2.1
+PT_b_beta_S2M_P4_LV_SRC/RET,JP11_JPU2_P4_LV_Source/Return,P28 - 3/11,13 - J13 - 6/5,2 - J13 - 8/7 | ID: 50,W3.4 / W3.3
+PT_b_beta_S2M_P3_LV_SRC/RET,JP11_JPU2_P3_LV_Source/Return,P28 - 4/12,16 - J13 - 8/7,4 - J13 - 8/7 | ID: 36,W4.6 / W4.5

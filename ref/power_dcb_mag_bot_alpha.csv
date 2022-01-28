@@ -1,0 +1,64 @@
+Alpha,,,LVR Underground,LVR Surface,
+LVR Name,PPP Name,PPP Part No.,LV1.5 (no) (J12/J13) (ChS/ChR),LV1.2 (no) (J12/J13) (ChS/ChR),Cable Pair.Wire
+DCB_7_alpha_b_P,JD7_JPL1_1V5_Master,P20 - 1,,12 - J13 - 8,W1.Blue
+DCB_7_alpha_b_P_S,JD7_JPL1_1V5_Slave,P20 - 2,,12 - J13 - 6,W2.2
+DCB_6_7_alpha_b_25_P,JD7_6_JPL1_2V5,P20 - 3,,16 - J13 - 8,W5.8
+DCB_8_alpha_b_P,JD8_JPL2_1V5_Master,P20 - 4,,10 - J13 - 4,W3.4
+DCB_8_alpha_b_P_S,JD8_JPL2_1V5_Slave,P20 - 5,,10 - J13 - 2,W4.6
+DCB_10_11_alpha_b_25_P,JD11_10_JPL2_2V5,P20 - 6,,16 - J12 - 6,W6.10
+DCB_7_alpha_b_N,JD7_JPL1_GND_Master,P20 - 9,,12 - J13 - 7,W1.Green
+DCB_7_alpha_b_N_S,JD7_JPL1_GND_Slave,P20 - 10,,12 - J13 - 5,W2.1
+DCB_6_7_alpha_b_25_N,JD7_6_JPL1_GND,P20 - 11,,16 - J13 - 7,W5.7
+DCB_8_alpha_b_N,JD8_JPL2_GND_Master,P20 - 12,,10 - J13 - 3,W3.3
+DCB_8_alpha_b_N_S,JD8_JPL2_GND_Slave,P20 - 13,,10 - J13 - 1,W4.5
+DCB_10_11_alpha_b_25_N,JD11_10_JPL2_GND,P20 - 14,,16 - J12 - 5,W6.9
+DCB_0_alpha_b_P,JD0_JPL0_1V5_Master,P21 - 1,,10 - J12 - 4,W1.Blue
+DCB_1_alpha_b_P_S,JD1_JPL0_1V5_Slave,P21 - 2,,10 - J12 - 6,W4.6
+DCB_1_alpha_b_P,JD1_JPL0_1V5_Master,P21 - 3,,10 - J12 - 8,W3.4
+DCB_4_alpha_b_P,JD4_JPL1_1V5_Master,P21 - 4,,12 - J12 - 4,W5.8
+DCB_4_alpha_b_P_S,JD4_JPL1_1V5_Slave,P21 - 5,,12 - J12 - 2,W6.10
+DCB_0_alpha_b_P_S,JD0_JPL0_1V5_Slave,P21 - 6,,10 - J12 - 2,W2.2
+DCB_0_alpha_b_N,JD0_JPL0_GND_Master,P21 - 9,,10 - J12 - 3,W1.Green
+DCB_1_alpha_b_N_S,JD1_JPL0_GND_Slave,P21 - 10,,10 - J12 - 5,W4.5
+DCB_1_alpha_b_N,JD1_JPL0_GND_Master,P21 - 11,,10 - J12 - 7,W3.3
+DCB_4_alpha_b_N,JD4_JPL1_GND_Master,P21 - 12,,12 - J12 - 3,W5.7
+DCB_4_alpha_b_N_S,JD4_JPL1_GND_Slave,P21 - 13,,12 - J12 - 1,W6.9
+DCB_0_alpha_b_N_S,JD0_JPL0_GND_Slave,P21 - 14,,10 - J12 - 1,W2.1
+DCB_6_alpha_b_P_S,JD6_JPL1_1V5_Slave,P23 - 1,,12 - J13 - 2,W2.2
+DCB_6_alpha_b_P,JD6_JPL1_1V5_Master,P23 - 2,,12 - J13 - 4,W1.Blue
+DCB_9_alpha_b_P_S,JD9_JPL2_1V5_Slave,P23 - 3,,10 - J13 - 6,W4.6
+DCB_9_alpha_b_P,JD9_JPL2_1V5_Master,P23 - 5,,10 - J13 - 8,W.3.4
+DCB_10_alpha_b_P_S,JD10_JPL2_1V5_Slave,P23 - 6,,11 - J12 - 2,W6.10
+DCB_10_alpha_b_P,JD10_JPL2_1V5_Master,P23 - 7,,11 - J12 - 4,W5.8
+DCB_6_alpha_b_N_S,JD6_JPL1_GND_Slave,P23 - 9,,12 - J13 - 1,W2.1
+DCB_6_alpha_b_N,JD6_JPL1_GND_Master,P23 - 10,,12 - J13 - 3,W1.Green
+DCB_9_alpha_b_N_S,JD9_JPL2_GND_Slave,P23 - 11,,10 - J13 - 5,W4.5
+DCB_9_alpha_b_N,JD9_JPL2_GND_Master,P23 - 13,,10 - J13 - 7,W3.3
+DCB_10_alpha_b_N_S,JD10_JPL2_GND_Slave,P23 - 14,,11 - J12 - 1,W6.9
+DCB_10_alpha_b_N,JD10_JPL2_GND_Master,P23 - 15,,11 - J12 - 3,W5.7
+DCB_0_1_alpha_b_25_P,JD1_0_JPL0_2V5,P24 - 1,,16 - J13 - 2,W3.4
+DCB_5_alpha_b_P_S,JD5_JPL1_1V5_Slave,P24 - 3,,12 - J12 - 6,W2.2
+DCB_4_5_alpha_b_25_P,JD5_4_JPL1_2V5,P24 - 4,,16 - J13 - 4,W4.6
+DCB_5_alpha_b_P,JD5_JPL1_1V5_Master,P24 - 5,,12 - J12 - 8,W1.Blue
+DCB_2_alpha_b_P,JD2_JPL0_1V5_Master,P24 - 7,,11 - J12 - 8,W5.8
+DCB_2_alpha_b_P_S,JD2_JPL0_1V5_Slave,P24 - 8,,11 - J12 - 6,W6.10
+DCB_0_1_alpha_b_25_N,JD1_0_JPL0_GND,P24 - 9,,16 - J13 - 1,W3.3
+DCB_5_alpha_b_N_S,JD5_JPL1_GND_Slave,P24 - 11,,12 - J12 - 5,W2.1
+DCB_4_5_alpha_b_25_N,JD5_4_JPL1_GND,P24 - 12,,16 - J13 - 3,W4.5
+DCB_5_alpha_b_N,JD5_JPL1_GND_Master,P24 - 13,,12 - J12 - 7,W1.Green
+DCB_2_alpha_b_N,JD2_JPL0_GND_Master,P24 - 15,,11 - J12 - 7,W5.7
+DCB_2_alpha_b_N_S,JD2_JPL0_GND_Slave,P24 - 16,,11 - J12 - 5,W6.9
+DCB_8_9_alpha_b_25_P,JD9_8_JPL2_2V5,P23 - 4,,16 - J13 - 6,W3.3
+DCB_8_9_alpha_b_25_N,JD9_8_JPL2_GND,P23 - 12,,16 - J13 - 5,W3.4
+DCB_11_alpha_b_P_S,JD11_JPL2_1V5_Slave,P23 - 8,,11 - J13 - 2,W2.2
+DCB_11_alpha_b_N_S,JD11_JPL2_GND_Slave,P23 - 16,,11 - J13 - 1,W2.1
+DCB_3_alpha_b_P_S,JD3_JPL0_1V5_Slave,P24 -6,,11 - J13 - 6,W5.8
+DCB_3_alpha_b_N_S,JD3_JPL0_GND_Slave,P24 - 14,,11 - J13 - 5,W5.7
+DCB_3_alpha_b_P,JD3_JPL0_1V5_Master,P24 - 2,,11 - J13 - 8,W4.6
+DCB_3_alpha_b_N,JD3_JPL0_GND_Master,P24 - 10,,11 - J13 - 7,W4.5
+DCB_2_3_alpha_b_25_P,JD3_2_JPL0_2V5,P21 - 7,,16 - J12 - 4,W6.10
+DCB_2_3_alpha_b_25_N,JD3_2_JPL0_GND,P21 - 15,,16 - J12 - 3,W6.9
+DCB_11_alpha_b_P,JD11_JPL2_1V5_Master,P20 - 7,,11 - J13 - 4,W1.Blue
+DCB_11_alpha_b_N,JD11_JPL2_GND_Master,P20 - 15,,11 - J13 - 3,W1.Green
+,,,,,
+,,,,,
