@@ -1,7 +1,15 @@
+import copy
+
 def find_entry_containing(list, string): # returns (first) index of item in list containing string, else -1
   for entry in range(len(list)):
     if string in list[entry]: return entry
   return -1
+
+def list_item_instances(list, item): # returns a list of indices for all instances of item in list; assumes user is comparing like things
+  indices=[]
+  for i in range(len(list)):
+    if item==list[i]: indices.append(i)
+  return indices
 
 def transpose_2dlist(list): # [i][j] -> [j][i], assumes rectangular list
   result=[[None for i in range(len(list))] for j in range(len(list[0]))]
@@ -79,10 +87,36 @@ def bp_con_alt_to_JP(alt, mirror): # converts alternative BP connector notation 
     if bp_con_JP_to_alt("JP"+str(JP), mirror)==alt: return "JP"+str(JP)
   return None # should never return
 
-def reorganize_2dlist(key_phrase, entries): # give entries input as a 2D list, excluding headers; organize based on key_phrase
-  return entries
+def reorganize_2dlist(entries, key_phrase): # give entries input as a 2D list, excluding headers; organize based on key_phrase;
+                                            # returns sorted 2D list (non-destructive). Probably works best if sorting column has unique entries
+  # define a map from old row positions to new row positions in sorted 2D list
+  sorting={i:None for i in range(len(entries))}
+  # find the column (that contains entries with key_phrase a subphrase) to be used for sorting
+  sort_col=-1
+  entries_T=transpose_2dlist(entries)
+  for col in range(len(entries[0])):
+    for entry in entries_T[col]:
+      if key_phrase in entry: sort_col=col
+    if sort_col!=-1: break
+  if sort_col==-1: return entries
 
-def create_table(zPEPI, yPEPI, posBP):
+  col_unsorted=transpose_2dlist(entries)[sort_col]
+  col_sorted=copy.deepcopy(col_unsorted)
+  col_sorted.sort()
+  for i in sorting:
+    entry=col_unsorted[i]
+    entry_sorted_indices=list_item_instances(col_sorted, entry) # should be guaranteed to be nonempty, based on col_sorted/unsorted definitions; ignore safety
+    for ind in copy.deepcopy(entry_sorted_indices):
+      if ind in list(sorting.values()): entry_sorted_indices.remove(ind) # don't map to a new index twice; mapping should be 1-to-1
+    sorting[i]=entry_sorted_indices[0] # with repeated new indices removed, just use the first available unique new index to map the old row to
+
+  sorted_entries=[None for row in range(len(entries))]
+  for old_row in sorting: sorted_entries[sorting[old_row]]=entries[old_row]
+
+  return sorted_entries
+
+
+def create_table(zPEPI, yPEPI, posBP, sorting_phrase):
   # inputs assume working on C-side: C-bot-IP-true, C-top-IP-mir, C-bot-mag-mir, C-top-mag-true are PEPIs
   # posBP is alpha/beta/gamma
   if not ((zPEPI in ["IP","mag"]) and (yPEPI in ["top","bot"]) and (posBP in ["alpha","beta","gamma"])):
@@ -93,9 +127,6 @@ def create_table(zPEPI, yPEPI, posBP):
   out_f=open(out_file,"w+")
   out_f.write("") # clear file, if it exists
   out_f.close()
-  write_comma_delimited_line(out_file, ["BP Connector", "iBB/P2B2 Connector", "4ASIC-group (hybrid)/DCB power", "PPP Positronic",
-                                        "Positronic Src", "Positronic Ret", "Surface LVR ID", "Surface LVR ch.", "Telemetry BB Connector",
-                                        "PPP RJ45 Coupler", "Surface Sense Label"]) # make table header
 
   mirror=False
   if (zPEPI=="mag" and yPEPI=="bot") or (zPEPI=="IP" and yPEPI=="top"): mirror=True
@@ -110,7 +141,7 @@ def create_table(zPEPI, yPEPI, posBP):
   # same sheet, PPP power info and LVR info can be obtained. Using the BP connector and 4-ASIC group/DCB power info, one can then find the telemetryBB
   # connector (and thus also surface long sense line label) using Scott's testing table. From the telemetryBB connector, the PPP sense info can then
   # be obtained using the sense cabling sheets
-  entries=[] # will be a 2D list; add headers as a final step
+  entries=[] # will be a 2D list; don't include headers
   scott_test_ref=csv_to_2dlist("ref/TelemetryWireMap_UTSurface_CSide.csv", 0)
   scott_test_ref_T=transpose_2dlist(scott_test_ref)
   scott_test_ref_straight=transpose_2dlist(scott_test_ref_T[:7])
@@ -169,8 +200,13 @@ def create_table(zPEPI, yPEPI, posBP):
         surface_sense+="??"
         PPP_sense+="??"
       print([bp_con, iBBP2B2_con, fourASICdcbPower, PPP_positronic, PPP_srcPin, PPP_retPin, surface_LVR_ID, surface_LVR_ch, tBB_con, PPP_sense, surface_sense])
-      write_comma_delimited_line(out_file, [bp_con, iBBP2B2_con, fourASICdcbPower, PPP_positronic, PPP_srcPin, PPP_retPin, surface_LVR_ID, surface_LVR_ch, tBB_con, PPP_sense, surface_sense])
+      entries.append([bp_con, iBBP2B2_con, fourASICdcbPower, PPP_positronic, PPP_srcPin, PPP_retPin, surface_LVR_ID, surface_LVR_ch, tBB_con, PPP_sense, surface_sense])
 
+  # reorganize table and then write to file (also add header)
+  sorted_entries=reorganize_2dlist(entries, sorting_phrase)
+  write_comma_delimited_line(out_file, ["BP Connector", "iBB/P2B2 Connector", "4ASIC-group (hybrid)/DCB power", "PPP Positronic",
+                                        "Positronic Src", "Positronic Ret", "Surface LVR ID", "Surface LVR ch.", "Telemetry BB Connector",
+                                        "PPP RJ45 Coupler", "Surface Sense Label"]) # make table header
+  for line in sorted_entries: write_comma_delimited_line(out_file, line)
 
-
-create_table("mag","bot","alpha")
+create_table("mag","top","alpha","JP")
