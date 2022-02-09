@@ -56,7 +56,7 @@ def LVR_output_con_and_pin_to_channel(output_con, src_pin): # output_con should 
 
 def surface_sense_label(posBP,fourASICdcbPower,tBB_con,output):
   # no need to safety check that output is acceptable value
-  if tBB_con=="slave": return "slave"
+  if tBB_con=="slave": return "slave" # actually, I think slave lines are sensed for the hybrids, but Scott ignored it in his testing table, so I will for now too (TODO...)
 
   voltage="12"
   suffix="x" # these are bad labels for surface cables; sense cables used both for straight and stereo staves
@@ -85,21 +85,20 @@ def bp_con_alt_to_JP(alt, mirror): # converts alternative BP connector notation 
   # take advantage of mapping being 1-to-1
   for JP in range(12):
     if bp_con_JP_to_alt("JP"+str(JP), mirror)==alt: return "JP"+str(JP)
-  return None # should never return
+  return None # should never return here
 
-def reorganize_2dlist(entries, key_phrase): # give entries input as a 2D list, excluding headers; organize based on key_phrase;
+def reorganize_2dlist(entries, sort_col): # give entries input as a 2D list, excluding headers; organize based on column sort_col;
                                             # returns sorted 2D list (non-destructive). Probably works best if sorting column has unique entries
   # define a map from old row positions to new row positions in sorted 2D list
   sorting={i:None for i in range(len(entries))}
-  # find the column (that contains entries with key_phrase a subphrase) to be used for sorting
-  sort_col=-1
-  entries_T=transpose_2dlist(entries)
-  for col in range(len(entries[0])):
-    for entry in entries_T[col]:
-      if key_phrase in entry: sort_col=col
-    if sort_col!=-1: break
-  if sort_col==-1: return entries
-
+  # # find the column (that contains entries with key_phrase a subphrase) to be used for sorting
+  # sort_col=-1
+  # entries_T=transpose_2dlist(entries)
+  # for col in range(len(entries[0])):
+  #   for entry in entries_T[col]:
+  #     if key_phrase in entry: sort_col=col
+  #   if sort_col!=-1: break
+  # if sort_col==-1: return entries
   col_unsorted=transpose_2dlist(entries)[sort_col]
   col_sorted=copy.deepcopy(col_unsorted)
   col_sorted.sort()
@@ -116,7 +115,7 @@ def reorganize_2dlist(entries, key_phrase): # give entries input as a 2D list, e
   return sorted_entries
 
 
-def create_table(zPEPI, yPEPI, posBP, sorting_phrase):
+def create_table(zPEPI, yPEPI, posBP, sorting_col):
   # inputs assume working on C-side: C-bot-IP-true, C-top-IP-mir, C-bot-mag-mir, C-top-mag-true are PEPIs
   # posBP is alpha/beta/gamma
   if not ((zPEPI in ["IP","mag"]) and (yPEPI in ["top","bot"]) and (posBP in ["alpha","beta","gamma"])):
@@ -134,13 +133,12 @@ def create_table(zPEPI, yPEPI, posBP, sorting_phrase):
   # For the surface, I'll primarily use Scott's PPPtoLVR_Mapping_FinalSurface.xlxs file from EDMS as a reference. I break this up into smaller
   # reference files for easier access, but all the info is the same. Note that this file is only for mag side; for IP, you'll need to reference
   # some document that gives info about what depopulates on IP (IP is just a subset of mag; everything is the same except depop).
-  # I will try to organize the output tables according to BP connector, since this will be useful for testing the hybrids; for the DCBs, this
-  # isn't really optimal, but one could always reorganize the tables. (TODO: add reorganizing function, since annoying in Excel)
   # To begin, I'll loop over the "PPP Name" for the given PEPI and BP position; I'll join straight hybrid + stereo hybrid + DCB together in one table.
   # Given a "PPP Name" the BP connector, iBB/P2B2 connector, and 4-ASIC group/DCB power (1.5V or 2.5V) are specified. From adjacent columns in the
   # same sheet, PPP power info and LVR info can be obtained. Using the BP connector and 4-ASIC group/DCB power info, one can then find the telemetryBB
-  # connector (and thus also surface long sense line label) using Scott's testing table. From the telemetryBB connector, the PPP sense info can then
-  # be obtained using the sense cabling sheets
+  # connector (and thus also surface long sense line label) using Scott's testing table (not sure if this exists in a spreahsheet elsewhere, or just
+  # in the telemetryBB schematics). From the telemetryBB connector, the PPP sense info can then be obtained using the sense cabling sheets
+  # TODO add column to output table to specify if line is master/slave/alone
   entries=[] # will be a 2D list; don't include headers
   scott_test_ref=csv_to_2dlist("ref/TelemetryWireMap_UTSurface_CSide.csv", 0)
   scott_test_ref_T=transpose_2dlist(scott_test_ref)
@@ -157,11 +155,18 @@ def create_table(zPEPI, yPEPI, posBP, sorting_phrase):
     ref=csv_to_2dlist("ref/surface_power_"+output+"_"+zPEPI+"_"+yPEPI+"_"+posBP+".csv", 2)
     ref_T=transpose_2dlist(ref)
     for name in ref_T[1]:
-      if "GND" in name: continue # dcb sheets have separate GND lines separate, but better to treat source/return together
+      if "GND" in name: continue # dcb sheets have GND lines separate, but better to treat source/return together
       row=row_col(ref,name)[0]
       # the 2.5V entries complicate things a bit, so change their notation
       if "2V5" in name: name=name.replace("_","-",1)
       name_parts=name.split("_")
+      msa="??"
+      if output=="dcb":
+        if "2V5" in name: msa="A"
+        else: msa=name_parts[-1][0]
+      else: # for hybrids, all beta/gamma LV lines are alone, and alpha LV lines are manually marked as M/S/A by me in the ref sheets
+        if posBP!="alpha": msa="A"
+        else: msa=ref[row][6][0]
       bp_con=name_parts[0]
       bp_con_alt=None
       if output!="dcb": bp_con_alt=bp_con_JP_to_alt(bp_con, mirror)
@@ -182,8 +187,9 @@ def create_table(zPEPI, yPEPI, posBP, sorting_phrase):
       # don't need to do a safety check for ref_tBB, since hard-coded
       # Note: when looking up telemetryBB connector, if cannot find the corresponding line in Scott's testing table, it's because the line is a slave
       tBB_con="slave"
-      # unfortunately, need to be a little tricky for mirror cases (for hybrids only), since Scott only did table for a true PEPI
-      bp_con_ref=bp_con
+      # unfortunately, need to be a little tricky for mirror cases (for hybrids only), since Scott only did table for a true PEPI (hybrid lines follow X0S notation
+      # when going true <-> mirror, not BP connector)
+      bp_con_ref=bp_con # used as a reference to find telemetryBB connector (will not necessarily be = bp_con when making entry in output testing table)
       tBB_row=-1
       if mirror and output!="dcb": bp_con_ref=bp_con_alt_to_JP(bp_con_alt, not mirror)
       if output!="dcb": tBB_row=find_entry_containing(transpose_2dlist(ref_tBB)[3], bp_con_ref+" "+fourASICdcbPower)
@@ -191,22 +197,24 @@ def create_table(zPEPI, yPEPI, posBP, sorting_phrase):
       if output=="dcb":
         if fourASICdcbPower!="2V5": tBB_row=find_entry_containing(transpose_2dlist(ref_tBB)[3], bp_con+" "+fourASICdcbPower)
         else: tBB_row=find_entry_containing(transpose_2dlist(ref_tBB)[3], bp_con.replace("-","_")+" "+fourASICdcbPower)
+      # if tBB_row==-1: # only happens if line is a hybrid slave
+      #   ... set tBB_row ...
       if tBB_row!=-1: tBB_con=ref_tBB[tBB_row][0]
       surface_sense=surface_sense_label(posBP,fourASICdcbPower,tBB_con,output)
       PPP_sense="slave"
       if tBB_con!="slave": PPP_sense=sensePPP_ref[row_col(sensePPP_ref,tBB_con)[0]][0]
-      if tBB_con!="slave" and mirror: # emphasize that you are uncertain about how this is being handled
-        tBB_con+="??"
-        surface_sense+="??"
-        PPP_sense+="??"
-      print([bp_con, iBBP2B2_con, fourASICdcbPower, PPP_positronic, PPP_srcPin, PPP_retPin, surface_LVR_ID, surface_LVR_ch, tBB_con, PPP_sense, surface_sense])
-      entries.append([bp_con, iBBP2B2_con, fourASICdcbPower, PPP_positronic, PPP_srcPin, PPP_retPin, surface_LVR_ID, surface_LVR_ch, tBB_con, PPP_sense, surface_sense])
+      # if tBB_con!="slave" and mirror: # emphasize that you are uncertain about how this is being handled
+      #   tBB_con+="??"
+      #   surface_sense+="??"
+      #   PPP_sense+="??"
+      print([bp_con, iBBP2B2_con, fourASICdcbPower, msa, PPP_positronic, PPP_srcPin, PPP_retPin, surface_LVR_ID, surface_LVR_ch, tBB_con, PPP_sense, surface_sense])
+      entries.append([bp_con, iBBP2B2_con, fourASICdcbPower, msa, PPP_positronic, PPP_srcPin, PPP_retPin, surface_LVR_ID, surface_LVR_ch, tBB_con, PPP_sense, surface_sense])
 
   # reorganize table and then write to file (also add header)
-  sorted_entries=reorganize_2dlist(entries, sorting_phrase)
-  write_comma_delimited_line(out_file, ["BP Connector", "iBB/P2B2 Connector", "4ASIC-group (hybrid)/DCB power", "PPP Positronic",
+  sorted_entries=reorganize_2dlist(entries, sorting_col)
+  write_comma_delimited_line(out_file, ["BP Connector", "iBB/P2B2 Connector", "4ASIC-group (hybrid)/DCB power", "M/S/A", "PPP Positronic",
                                         "Positronic Src", "Positronic Ret", "Surface LVR ID", "Surface LVR ch.", "Telemetry BB Connector",
                                         "PPP RJ45 Coupler", "Surface Sense Label"]) # make table header
   for line in sorted_entries: write_comma_delimited_line(out_file, line)
 
-create_table("mag","top","alpha","JP")
+create_table("mag","bot","alpha",0)

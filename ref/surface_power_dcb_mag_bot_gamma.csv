@@ -1,55 +1,52 @@
-Gamma,,,LVR Underground,LVR Surface,
-LVR Name,PPP Name,PPP Part No.,LV1.5 (no) (J12/J13) (ChS/ChR),LV1.2 (no) (J12/J13) (ChS/ChR),Cable Pair.Wire
-DCB_7_gamma_b_P,JD7_JPL1_1V5_Master,P32 - 1,,(12) - J13 - 8,W1.Blue
-DCB_7_gamma_b_P_S,JD7_JPL1_1V5_Slave,P32 - 2,,(12) - J13 - 6,W2.2
-DCB_6_7_gamma_b_25_P,JD7_6_JPL1_2V5,P32 - 3,,(16) - J13 - 8,W5.8
-DCB_8_gamma_b_P,JD8_JPL2_1V5_Master,P32 - 4,,(10) - J13 - 4,W3.4
-DCB_8_gamma_b_P_S,JD8_JPL2_1V5_Slave,P32 - 5,,(10) - J13 - 2,W4.6
-DCB_10_11_gamma_b_25_P,JD11_10_JPL2_2V5,P32 - 6,,(16) - J12 - 6,W6.10
-DCB_7_gamma_b_N,JD7_JPL1_GND_Master,P32 - 9,,(12) - J13 - 7,W1.Green
-DCB_7_gamma_b_N_S,JD7_JPL1_GND_Slave,P32 - 10,,(12) - J13 - 5,W2.1
-DCB_6_7_gamma_b_25_N,JD7_6_JPL1_GND,P32 - 11,,(16) - J13 - 7,W5.7
-DCB_8_gamma_b_N,JD8_JPL2_GND_Master,P32 - 12,,(10) - J13 - 3,W3.3
-DCB_8_gamma_b_N_S,JD8_JPL2_GND_Slave,P32 - 13,,(10) - J13 - 1,W4.5
-DCB_10_11_gamma_b_25_N,JD11_10_JPL2_2V5,P32 - 14,,(16) - J12 - 5,W6.9
-DCB_0_gamma_b_P,JD0_JPL0_1V5_Master,P33 -1,,(10) - J12 - 4,W1.Blue
-DCB_1_gamma_b_P_S,JD1_JPL0_1V5_Slave,P33 - 2,,(10) - J12 - 6,W4.6
-DCB_1_gamma_b_P,JD1_JPL0_1V5_Master,P33 - 3,,(10) - J12 - 8,W3.4
-DCB_4_gamma_b_P,JD4_JPL1_1V5_Master,P33 - 4,,(12) - J12 - 4,W5.8
-DCB_4_gamma_b_P_S,JD4_JPL1_1V5_Slave,P33 - 5,,(12) - J12 - 2,W6.10
-DCB_0_gamma_b_P_S,JD0_JPL0_1V5_Slave,P33 - 6,,(10) - J12 - 2,W2.2
-DCB_0_gamma_b_N,JD0_JPL0_GND_Master,P33 - 9,,(10) - J12 - 3,W1.Green
-DCB_1_gamma_b_N_S,JD1_JPL0_GND_Slave,P33 - 10,,(10) - J12 - 5,W4.5
-DCB_1_gamma_b_N,JD1_JPL0_GND_Master,P33 - 11,,(10) - J12 - 7,W3.3
-DCB_4_gamma_b_N,JD4_JPL1_GND_Master,P33 - 12,,(12) - J12 - 3,W5.7
-DCB_4_gamma_b_N_S,JD4_JPL1_GND_Slave,P33 - 13,,(12) - J12 - 1,W6.9
-DCB_0_gamma_b_N_S,JD0_JPL0_GND_Slave,P33 - 14,,(10) - J12 - 1,W2.1
-DCB_6_gamma_b_P_S,JD6_JPL1_1V5_Slave,P35 - 1,,(12) - J13 - 2,W2.2
-DCB_6_gamma_b_P,JD6_JPL1_1V5_Master,P35 - 2,,(12) - J13 - 4,W1.Blue
-DCB_9_gamma_b_P_S,JD9_JPL2_1V5_Slave,P35 - 3,,(10) - J13 - 6,W4.6
-DCB_9_gamma_b_P,JD9_JPL2_1V5_Master,P35 - 5,,(10) - J13 - 8,W.3.4
-DCB_10_gamma_b_P_S,JD10_JPL2_1V5_Slave,P35 - 6,,(11) - J12 - 2,W6.10
-DCB_10_gamma_b_P,JD10_JPL2_1V5_Master,P35 - 7,,(11) - J12 - 4,W5.8
-DCB_6_gamma_b_N_S,JD6_JPL1_GND_Slave,P35 - 9,,(12) - J13 - 1,W2.1
-DCB_6_gamma_b_N,JD6_JPL1_GND_Master,P35 - 10,,(12) - J13 - 3,W1.Green
-DCB_9_gamma_b_N_S,JD9_JPL2_GND_Slave,P35-11,,(10) - J13 - 5,W4.5
-DCB_9_gamma_b_N,JD9_JPL2_GND_Master,P35 - 13,,(10) - J13 - 7,W3.3
-DCB_10_gamma_b_N_S,JD10_JPL2_GND_Slave,P35 - 14,,(11) - J12 - 1,W6.9
-DCB_10_gamma_b_N,JD10_JPL2_GND_Master,P35 - 15,,(11) - J12 - 3,W5.7
-DCB_0_1_gamma_b_25_P,JD1_0_JPL0_2V5,P36 - 1,,(16) - J13 - 2,W3.4
-DCB_5_gamma_b_P_S,JD5_JPL1_1V5_Slave,P36 - 3,,(12) - J12 - 6,W2.2
-DCB_4_5_gamma_b_25_P,JD5_4_JPL1_2V5,P36 - 4,,(16) - J13 - 4,W4.6
-DCB_5_gamma_b_P,JD5_JPL1_1V5_Master,P36 - 5,,(12) - J12 - 8,W1.Blue
-DCB_0_1_gamma_b_25_N,JD1_0_JPL0_GND,P36 - 9,,(16) - J13 - 1,W3.3
-DCB_5_gamma_b_N_S,JD5_JPL1_GND_Slave,P36 - 11,,(12) - J12 - 5,W2.1
-DCB_4_5_gamma_b_25_N,JD5_4_JPL1_GND,P36 - 12,,(16) - J13 - 3,W4.5
-DCB_5_gamma_b_N,JD5_JPL1_GND_Master,P36 - 13,,(12) - J12 - 7,W1.Green
-DCB_8_9_gamma_b_25_P,JD9_8_JPL2_2V5,P35 - 4,,(16) - J13 - 6,W3.3
-DCB_8_9_gamma_b_25_N,JD9_8_JPL2_GND,P35 - 12,,(16) - J13 - 5,W3.4
-DCB_11_gamma_b_P_S,JD11_JPL2_1V5_Slave,P35 - 8,,(11) - J13 - 2,W2.2
-DCB_11_gamma_b_N_S,JD11_JPL2_GND_Slave,P35 - 16,,(11) - J13 - 1,W2.1
-DCB_11_gamma_b_P,JD11_JPL2_1V5_Master,P32 - 7,,(11) - J13 - 4,W1.Blue
-DCB_11_gamma_b_N,JD11_JPL2_GND_Master,P32 - 15,,(11) - J13 - 3,W1.Green
-,,,,,
-,,,,,
-,,,,,
+Gamma,,,LVR Underground,LVR Surface,,
+LVR Name,PPP Name,PPP Part No.,LV1.5 (no) (J12/J13) (ChS/ChR),LV1.2 (no) (J12/J13) (ChS/ChR),Cable Pair.Wire,IP depop (surface)
+DCB_7_gamma_b_P,JD7_JPL1_1V5_Master,P32 - 1,,(12) - J13 - 8,W1.Blue,no
+DCB_7_gamma_b_P_S,JD7_JPL1_1V5_Slave,P32 - 2,,(12) - J13 - 6,W2.2,no
+DCB_6_7_gamma_b_25_P,JD7_6_JPL1_2V5,P32 - 3,,(16) - J13 - 8,W5.8,no
+DCB_8_gamma_b_P,JD8_JPL2_1V5_Master,P32 - 4,,(10) - J13 - 4,W3.4,no
+DCB_8_gamma_b_P_S,JD8_JPL2_1V5_Slave,P32 - 5,,(10) - J13 - 2,W4.6,no
+DCB_10_11_gamma_b_25_P,JD11_10_JPL2_2V5,P32 - 6,,(16) - J12 - 6,W6.10,yes
+DCB_7_gamma_b_N,JD7_JPL1_GND_Master,P32 - 9,,(12) - J13 - 7,W1.Green,no
+DCB_7_gamma_b_N_S,JD7_JPL1_GND_Slave,P32 - 10,,(12) - J13 - 5,W2.1,no
+DCB_6_7_gamma_b_25_N,JD7_6_JPL1_GND,P32 - 11,,(16) - J13 - 7,W5.7,no
+DCB_8_gamma_b_N,JD8_JPL2_GND_Master,P32 - 12,,(10) - J13 - 3,W3.3,no
+DCB_8_gamma_b_N_S,JD8_JPL2_GND_Slave,P32 - 13,,(10) - J13 - 1,W4.5,no
+DCB_10_11_gamma_b_25_N,JD11_10_JPL2_GND,P32 - 14,,(16) - J12 - 5,W6.9,yes
+DCB_0_gamma_b_P,JD0_JPL0_1V5_Master,P33 -1,,(10) - J12 - 4,W1.Blue,no
+DCB_1_gamma_b_P_S,JD1_JPL0_1V5_Slave,P33 - 2,,(10) - J12 - 6,W4.6,no
+DCB_1_gamma_b_P,JD1_JPL0_1V5_Master,P33 - 3,,(10) - J12 - 8,W3.4,no
+DCB_4_gamma_b_P,JD4_JPL1_1V5_Master,P33 - 4,,(12) - J12 - 4,W5.8,no
+DCB_4_gamma_b_P_S,JD4_JPL1_1V5_Slave,P33 - 5,,(12) - J12 - 2,W6.10,no
+DCB_0_gamma_b_P_S,JD0_JPL0_1V5_Slave,P33 - 6,,(10) - J12 - 2,W2.2,no
+DCB_0_gamma_b_N,JD0_JPL0_GND_Master,P33 - 9,,(10) - J12 - 3,W1.Green,no
+DCB_1_gamma_b_N_S,JD1_JPL0_GND_Slave,P33 - 10,,(10) - J12 - 5,W4.5,no
+DCB_1_gamma_b_N,JD1_JPL0_GND_Master,P33 - 11,,(10) - J12 - 7,W3.3,no
+DCB_4_gamma_b_N,JD4_JPL1_GND_Master,P33 - 12,,(12) - J12 - 3,W5.7,no
+DCB_4_gamma_b_N_S,JD4_JPL1_GND_Slave,P33 - 13,,(12) - J12 - 1,W6.9,no
+DCB_0_gamma_b_N_S,JD0_JPL0_GND_Slave,P33 - 14,,(10) - J12 - 1,W2.1,no
+DCB_6_gamma_b_P_S,JD6_JPL1_1V5_Slave,P35 - 1,,(12) - J13 - 2,W2.2,no
+DCB_6_gamma_b_P,JD6_JPL1_1V5_Master,P35 - 2,,(12) - J13 - 4,W1.Blue,no
+DCB_9_gamma_b_P_S,JD9_JPL2_1V5_Slave,P35 - 3,,(10) - J13 - 6,W4.6,no
+DCB_9_gamma_b_P,JD9_JPL2_1V5_Master,P35 - 5,,(10) - J13 - 8,W.3.4,no
+DCB_10_gamma_b_P_S,JD10_JPL2_1V5_Slave,P35 - 6,,(11) - J12 - 2,W6.10,yes
+DCB_10_gamma_b_P,JD10_JPL2_1V5_Master,P35 - 7,,(11) - J12 - 4,W5.8,yes
+DCB_6_gamma_b_N_S,JD6_JPL1_GND_Slave,P35 - 9,,(12) - J13 - 1,W2.1,no
+DCB_6_gamma_b_N,JD6_JPL1_GND_Master,P35 - 10,,(12) - J13 - 3,W1.Green,no
+DCB_9_gamma_b_N_S,JD9_JPL2_GND_Slave,P35-11,,(10) - J13 - 5,W4.5,no
+DCB_9_gamma_b_N,JD9_JPL2_GND_Master,P35 - 13,,(10) - J13 - 7,W3.3,no
+DCB_10_gamma_b_N_S,JD10_JPL2_GND_Slave,P35 - 14,,(11) - J12 - 1,W6.9,yes
+DCB_10_gamma_b_N,JD10_JPL2_GND_Master,P35 - 15,,(11) - J12 - 3,W5.7,yes
+DCB_0_1_gamma_b_25_P,JD1_0_JPL0_2V5,P36 - 1,,(16) - J13 - 2,W3.4,no
+DCB_5_gamma_b_P_S,JD5_JPL1_1V5_Slave,P36 - 3,,(12) - J12 - 6,W2.2,no
+DCB_4_5_gamma_b_25_P,JD5_4_JPL1_2V5,P36 - 4,,(16) - J13 - 4,W4.6,no
+DCB_5_gamma_b_P,JD5_JPL1_1V5_Master,P36 - 5,,(12) - J12 - 8,W1.Blue,no
+DCB_0_1_gamma_b_25_N,JD1_0_JPL0_GND,P36 - 9,,(16) - J13 - 1,W3.3,no
+DCB_5_gamma_b_N_S,JD5_JPL1_GND_Slave,P36 - 11,,(12) - J12 - 5,W2.1,no
+DCB_4_5_gamma_b_25_N,JD5_4_JPL1_GND,P36 - 12,,(16) - J13 - 3,W4.5,no
+DCB_5_gamma_b_N,JD5_JPL1_GND_Master,P36 - 13,,(12) - J12 - 7,W1.Green,no
+DCB_8_9_gamma_b_25_P,JD9_8_JPL2_2V5,P35 - 4,,(16) - J13 - 6,W3.3,no
+DCB_8_9_gamma_b_25_N,JD9_8_JPL2_GND,P35 - 12,,(16) - J13 - 5,W3.4,no
+DCB_11_gamma_b_P_S,JD11_JPL2_1V5_Slave,P35 - 8,,(11) - J13 - 2,W2.2,yes
+DCB_11_gamma_b_N_S,JD11_JPL2_GND_Slave,P35 - 16,,(11) - J13 - 1,W2.1,yes
+DCB_11_gamma_b_P,JD11_JPL2_1V5_Master,P32 - 7,,(11) - J13 - 4,W1.Blue,yes
+DCB_11_gamma_b_N,JD11_JPL2_GND_Master,P32 - 15,,(11) - J13 - 3,W1.Green,yes

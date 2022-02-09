@@ -50,4 +50,3 @@ DCB_11_beta_b_P_S,JD11_JPL2_1V5_Slave,P29 - 8,32 - J13 - 2,14 - J13 - 2 | ID: 18
 DCB_11_beta_b_N_S,JD11_JPL2_GND_Slave,P29 - 16,32 - J13 - 1,14 - J13 - 1 | ID: 18,W2.1
 DCB_11_beta_b_P,JD11_JPL2_1V5_Master,P26 - 7,32 - J13 - 4,14 - J13 - 4 | ID: 18,W1.Blue
 DCB_11_beta_b_N,JD11_JPL2_GND_Master,P26 - 15,32 - J13 - 3,14 - J13 - 3 | ID: 18,W1.Green
-,,,,,

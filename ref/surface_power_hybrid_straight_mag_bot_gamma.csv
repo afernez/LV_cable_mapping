@@ -1,23 +1,23 @@
-LVR Name,PPP Name,PPP Part No - Pin No (Src/Ret).,LVR Surface,Cable Pair Wire.A / Wire.B (Src/Ret)
-Gamma,,,LV1.2 (no) (J12/J13) (ChS/ChR),
-PT_b_gamma_X0S_P1W_LV_SRC/RET,JP3_JPU0_P1W_LV_Source/Return,P16 - 1/9,7 - J13 - 4/3 | ID: 99,W1.BLUE / W1.GREEN
-PT_b_gamma_X0S_P2E_LV_SRC/RET,JP3_JPU1_P2E_LV_Source/Return,P16 - 2/10,7 - J12 - 8/7 | ID: 99,W2.2 / W2.1
-PT_b_gamma_X0S_P3_LV_SRC/RET,JP3_JPU1_P3_LV_Source/Return,P16 - 3/11,3 - J12 - 4/3 | ID: 26,W3.4 / W3.3
-PT_b_gamma_X0M_P1W_LV_SRC/RET,JP2_JPU0_P1W_LV_Source/Return,P16 - 4/12,8 - J13 - 4/3 | ID: 55,W4.6 / W4.5
-PT_b_gamma_X0M_P2E_LV_SRC/RET,JP2_JPU0_P2E_LV_Source/Return,P16 - 5/13,5 - J12 - 2/1 | ID: 69,W5.8 / W5.7
-PT_b_gamma_X0M_P3_LV_SRC/RET,JP2_JPU0_P3_LV_Source/Return,P16 - 6/14,3 - J12 - 8/7 | ID: 26,W6.10 / W6.9
-PT_b_gamma_X1S_P1W_LV_SRC/RET,JP7_JPU1_P1W_LV_Source/Return,P17 - 1/9,7 - J13 - 8/7 | ID: 99,W1.BLUE / W1.GREEN
-PT_b_gamma_X1S_P2E_LV_SRC/RET,JP7_JPU1_P2E_LV_Source/Return,P17 - 2/10,3 - J12 - 2/1 | ID: 26,W2.2 / W2.1
-PT_b_gamma_X1S_P3_LV_SRC/RET,JP7_JPU1_P3_LV_Source/Return,P17 - 3/11,1 - J12 - 4/3 | ID: 30,W3.4 / W3.3
-PT_b_gamma_X1M_P1W_LV_SRC/RET,JP6_JPU1_P1W_LV_Source/Return,P17 - 4/12,8 - J12 - 8/7 | ID: 55,W4.6 / W4.5
-PT_b_gamma_X1M_P2E_LV_SRC/RET,JP6_JPU1_P2E_LV_Source/Return,P17 - 5/13,5 - J12 - 4/3 | ID: 69,W5.8 / W5.7
-PT_b_gamma_X1M_P3_LV_SRC/RET,JP6_JPU1_P3_LV_Source/Return,P17 - 6/14,3 - J12 - 6/5 | ID: 26,W6.10 / W6.9
-PT_b_gamma_X2S_P1W_LV_SRC/RET,JP11_JPU2_P1W_LV_Source/Return,P18 - 1/9,5 - J12 - 8/7 | ID: 59,W1.BLUE / W1.GREEN
-PT_b_gamma_X2S_P2E_LV_SRC/RET,JP11_JPU2_P2E_LV_Source/Return,P18 - 2/10,3 - J13 - 4/3 | ID: 26,W2.2 / W2.1
-PT_b_gamma_X2M_P1W_LV_SRC/RET,JP10_JPU2_P1W_LV_Source/Return,P18 - 4/12,8 - J13 - 8/7 | ID: 55,W4.6 / W4.5
-PT_b_gamma_X2M_P2E_LV_SRC/RET,JP10_JPU2_P2E_LV_Source/Return,P18 - 5/13,5 - J12 - 6/5 | ID: 69,W5.8 / W5.7
-PT_b_gamma_X2M_P3_LV_SRC/RET,JP10_JPU2_P3_LV_Source/Return,P18 - 6/14,3 - J13 - 8/7 | ID: 26,W6.10 / W6.9
-PT_b_gamma_X0M_P4_LV_SRC/RET,JP2_JPL1_P4_LV_Source/Return,P34 - 1/9,1 - J12 - 8/7 | ID: 30,W1.BLUE / W1.GREEN
-PT_b_gamma_X1M_P4_LV_SRC/RET,JP6_JPU1_P4_LV_Source/Return,P34 - 2/10,1 - J12 - 6/5 | ID: 30,W2.2 / W2.1
-PT_b_gamma_X2M_P4_LV_SRC/RET,JP10_JPL2_P4_LV_Source/Return,P34 - 3/11,1 - J13 - 8/7 | ID: 30,W3.4 / W3.3
-PT_b_gamma_X2S_P3_LV_SRC/RET,JP11_JPU2_P3_LV_Source/Return,P34 - 4/12,1 - J12 - 2/1 | ID: 30,W4.6 / W4.5
+LVR Name,PPP Name,PPP Part No - Pin No (Src/Ret).,LVR Surface,Cable Pair Wire.A / Wire.B (Src/Ret),,
+Gamma,,,LV1.2 (no) (J12/J13) (ChS/ChR),,,IP depop (surface)
+PT_b_gamma_X0S_P1W_LV_SRC/RET,JP3_JPU0_P1W_LV_Source/Return,P16 - 1/9,7 - J13 - 4/3 | ID: 99,W1.BLUE / W1.GREEN,,no
+PT_b_gamma_X0S_P2E_LV_SRC/RET,JP3_JPU1_P2E_LV_Source/Return,P16 - 2/10,7 - J12 - 8/7 | ID: 99,W2.2 / W2.1,,no
+PT_b_gamma_X0S_P3_LV_SRC/RET,JP3_JPU1_P3_LV_Source/Return,P16 - 3/11,3 - J12 - 4/3 | ID: 26,W3.4 / W3.3,,no
+PT_b_gamma_X0M_P1W_LV_SRC/RET,JP2_JPU0_P1W_LV_Source/Return,P16 - 4/12,8 - J13 - 4/3 | ID: 55,W4.6 / W4.5,,no
+PT_b_gamma_X0M_P2E_LV_SRC/RET,JP2_JPU0_P2E_LV_Source/Return,P16 - 5/13,5 - J12 - 2/1 | ID: 69,W5.8 / W5.7,,no
+PT_b_gamma_X0M_P3_LV_SRC/RET,JP2_JPU0_P3_LV_Source/Return,P16 - 6/14,3 - J12 - 8/7 | ID: 26,W6.10 / W6.9,,no
+PT_b_gamma_X1S_P1W_LV_SRC/RET,JP7_JPU1_P1W_LV_Source/Return,P17 - 1/9,7 - J13 - 8/7 | ID: 99,W1.BLUE / W1.GREEN,,no
+PT_b_gamma_X1S_P2E_LV_SRC/RET,JP7_JPU1_P2E_LV_Source/Return,P17 - 2/10,3 - J12 - 2/1 | ID: 26,W2.2 / W2.1,,no
+PT_b_gamma_X1S_P3_LV_SRC/RET,JP7_JPU1_P3_LV_Source/Return,P17 - 3/11,1 - J12 - 4/3 | ID: 30,W3.4 / W3.3,,no
+PT_b_gamma_X1M_P1W_LV_SRC/RET,JP6_JPU1_P1W_LV_Source/Return,P17 - 4/12,8 - J12 - 8/7 | ID: 55,W4.6 / W4.5,,no
+PT_b_gamma_X1M_P2E_LV_SRC/RET,JP6_JPU1_P2E_LV_Source/Return,P17 - 5/13,5 - J12 - 4/3 | ID: 69,W5.8 / W5.7,,no
+PT_b_gamma_X1M_P3_LV_SRC/RET,JP6_JPU1_P3_LV_Source/Return,P17 - 6/14,3 - J12 - 6/5 | ID: 26,W6.10 / W6.9,,no
+PT_b_gamma_X2S_P1W_LV_SRC/RET,JP11_JPU2_P1W_LV_Source/Return,P18 - 1/9,5 - J12 - 8/7 | ID: 59,W1.BLUE / W1.GREEN,,yes
+PT_b_gamma_X2S_P2E_LV_SRC/RET,JP11_JPU2_P2E_LV_Source/Return,P18 - 2/10,3 - J13 - 4/3 | ID: 26,W2.2 / W2.1,,yes
+PT_b_gamma_X2M_P1W_LV_SRC/RET,JP10_JPU2_P1W_LV_Source/Return,P18 - 4/12,8 - J13 - 8/7 | ID: 55,W4.6 / W4.5,,yes
+PT_b_gamma_X2M_P2E_LV_SRC/RET,JP10_JPU2_P2E_LV_Source/Return,P18 - 5/13,5 - J12 - 6/5 | ID: 69,W5.8 / W5.7,,yes
+PT_b_gamma_X2M_P3_LV_SRC/RET,JP10_JPU2_P3_LV_Source/Return,P18 - 6/14,3 - J13 - 8/7 | ID: 26,W6.10 / W6.9,,yes
+PT_b_gamma_X0M_P4_LV_SRC/RET,JP2_JPL1_P4_LV_Source/Return,P34 - 1/9,1 - J12 - 8/7 | ID: 30,W1.BLUE / W1.GREEN,,no
+PT_b_gamma_X1M_P4_LV_SRC/RET,JP6_JPU1_P4_LV_Source/Return,P34 - 2/10,1 - J12 - 6/5 | ID: 30,W2.2 / W2.1,,no
+PT_b_gamma_X2M_P4_LV_SRC/RET,JP10_JPL2_P4_LV_Source/Return,P34 - 3/11,1 - J13 - 8/7 | ID: 30,W3.4 / W3.3,,yes
+PT_b_gamma_X2S_P3_LV_SRC/RET,JP11_JPU2_P3_LV_Source/Return,P34 - 4/12,1 - J12 - 2/1 | ID: 30,W4.6 / W4.5,,yes

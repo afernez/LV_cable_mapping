@@ -60,5 +60,3 @@ DCB_2_3_alpha_b_25_P,JD3_2_JPL0_2V5,P21 - 7,,16 - J12 - 4,W6.10
 DCB_2_3_alpha_b_25_N,JD3_2_JPL0_GND,P21 - 15,,16 - J12 - 3,W6.9
 DCB_11_alpha_b_P,JD11_JPL2_1V5_Master,P20 - 7,,11 - J13 - 4,W1.Blue
 DCB_11_alpha_b_N,JD11_JPL2_GND_Master,P20 - 15,,11 - J13 - 3,W1.Green
-,,,,,
-,,,,,
